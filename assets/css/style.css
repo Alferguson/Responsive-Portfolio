@@ -21,7 +21,7 @@ header {
 	
 	
 }
-/*why no bottom workkkkkkk*/
+	
 .topHeaderLeft {
 	color: white;
 	float: left;
@@ -108,11 +108,6 @@ input[type=text] {
     box-sizing: border-box;
 }
 
-input[name="message"] {
-    padding: 120px 100px;
-    
-}
-
 input[type="submit"] {
 	color: white;
 	background-color: #4aaaa5;
@@ -162,6 +157,9 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 980px) {
+	.topHeaderRight {
+		margin-right: 0px;
+	}
 	.leftBox {
 		width: 33%;
 	}
@@ -173,16 +171,21 @@ input[type="submit"] {
 		float: left;
 	}
 	.connectWithMe {
-		
+		right: 50px;
+		width: 30%;
 	
 	}	
+	input[name="message"] {
+    	height: 200px;
 }
 @media screen and (max-width: 768px) {
-	.topHeaderRight {
-		margin-right: 0px;
-}
+	
+	.topHeaderLeft, .topHeaderRight {
+		margin: 0px;
+	}
 	.leftBox {
-		width: 90%;
+		width: 80%;
+		margin-left: 20px;
 
 	}
 	.picOfMe {
@@ -195,10 +198,34 @@ input[type="submit"] {
 	.connectWithMe {
 		float: left;
 		right: 0px;
+		width: 40%;
+		margin: 20px 0px 20px 20px;
+		padding: 0px;
+
 	}	
 }
 @media screen and (max-width: 640px) {
-	.topHeaderLeft {
+	
+	.topHeaderLeft,
+	.topHeaderRight {
+		padding: 0px;
 		width: 100%;
+		
+		text-align: center;
+	
 	}
+	.leftBox {
+		padding: 0px;
+		margin: 0px 20px 0px 20px;
+		left: 0px;
+	}	
+	.connectWithMe {
+		padding: 0px;
+		margin: 20px 20px 60px 20px;
+		left: 0px;
+		width: 75%;
+
+	}	
+	
+	
 }
